@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Desenvolvimento Front-End</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      padding-bottom: 100px;
+    }
+    .navbar {
+      margin-bottom: 20px;
+    }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(blockchain-p.gif) no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .icon-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .icon {
+      font-size: 60px;
+      margin: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+      color: #007bff;
+    }
+    .icon:hover {
+      transform: scale(1.1);
+      color: #0056b3;
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-links a {
+      color: #333;
+      margin: 10px;
+      font-size: 30px;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #007bff;
+    }
+    .carousel-item {
+      height: 400px;
+    }
+    .carousel-item img {
+      max-height: 100%;
+      object-fit: cover;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fab fa-react"></i> Douglas Dutra</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre-mim.html">Sobre Mim</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="mailto:dtdouglasdutra@gmail.com" title="Email"><i class="fas fa-envelope"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/douglas.dutra88/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://wa.me/51989168511" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/dtdutra" title="GitHub" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Hero -->
+  <div class="hero">
+    <h1>Bem-vindo ao Meu Portfólio!</h1>
+    <p>Desenvolvedor Front-End</p>
+    <a href="#projetos" class="btn btn-custom">Veja Meus Projetos</a>
+  </div>
+
+  <!-- Seção de Habilidades -->
+  <div class="content text-center" id="projetos">
+    <h2>Minhas Habilidades</h2>
+    <p>Confira as tecnologias com as quais trabalho.</p>
+  </div>
+
+  <!-- Ícones das linguagens que você trabalha -->
+  <div class="icon-container">
+    <div class="icon"><i class="fab fa-html5"></i><p>HTML</p></div>
+    <div class="icon"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+    <div class="icon"><i class="fab fa-js"></i><p>JavaScript</p></div>
+    <div class="icon"><i class="fab fa-python"></i><p>Python</p></div>
+    <div class="icon"><i class="fab fa-react"></i><p>React</p></div>
+    <div class="icon"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+  </div>
+
+  <!-- Carrossel de Projetos -->
+  <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="desafio1.gif" class="d-block w-100" alt="Projeto 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: rgb(65, 0, 205);">Desafio 01 Codelândia</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="desafio2.gif" class="d-block w-100" alt="Projeto 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: rgb(13, 6, 205);">Desafio 02 Codelândia</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+  <!-- Redes sociais -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/douglas-dutra-79574b20b/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/douglas.dutra88/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:dtdouglasdutra@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/dtdutra" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Douglas Dutra. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
